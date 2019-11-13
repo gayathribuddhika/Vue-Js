@@ -1,0 +1,22 @@
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <body>
+        <div id="sample1">
+            <p>{{ message }}</p>
+        </div>
+        <p>
+            <button onclick="myFunction()">Click Me</button>
+        </p>
+        <script>
+            var obj = new Vue({
+                el: "#sample1",
+                data: { message: "Welcome to the Vue Js!!!" }
+            })
+
+            function myFunction(){
+                obj.message = "Gayathri Buddhika";
+            }
+        </script>
+  </body>
+
+</html>

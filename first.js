@@ -3,5 +3,13 @@ new Vue({
     data: { 
         name: 'Gayathri',
         job: "Student"
-    }
+    },
+    methods:{
+    	uni: function(country){
+    		return this.job + " of Sabaragamuwa University "+ country;
+    	}
+    },
+    
+    
 })
+

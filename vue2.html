@@ -1,0 +1,18 @@
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <body>
+        <h2>Two way Binding</h2>
+        <div id = "binding">
+            <p>{{ message }}</p>
+            <p><input v-model = "message"></p>
+        </div>
+        <script>
+            var newObj = new Vue({
+                el:"#binding",
+                data : {
+                    message : "Sabaragamuwa University"
+                }
+            })
+        </script>
+    </body>
+</html>

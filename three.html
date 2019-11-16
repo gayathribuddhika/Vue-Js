@@ -8,9 +8,14 @@
 <body>
 	<h2>Data Binding</h2>
 	<div id = "vue-app">
-		<a v-bind:href="google">Google</a>
-		
+		<a href="google">Google</a><br>
+		<a v-bind:href="google">Google</a><br> 
+		<a href="facebook">Facebook</a><br><br>
+		<input type="text" v-bind:value = "name"><br><br>
+		<input type="text" v-bind:value = "job"><br><br>
+		<p v-html="website"></p>
 	</div>
 	<script type="second.js"></script>
+	<script src="first.js"></script>
 </body>
 </html>

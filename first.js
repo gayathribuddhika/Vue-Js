@@ -2,7 +2,8 @@ new Vue({
     el: '#vue-app',
     data: { 
         name: 'Gayathri',
-        job: "Student"
+        job: "Student",
+        greeting = "Good Morning"
     },
     methods:{
     	uni: function(country){

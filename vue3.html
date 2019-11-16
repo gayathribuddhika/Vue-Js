@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>vue js</title>
+        <link href = "style.css" rel="stylesheet" type="text/css" href="">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id = "event">
+            <p>My age is {{ age }}</p>
+            <button v-on:click="add">Add one to year</button>
+            <button v-on:click="sub">substract one from year</button><br><br>
+
+            <button v-on:click="add(2)">Add years</button>
+            <button v-on:click="sub(5)">substract years</button><br><br>
+
+            <button v-on:dblclick="add(10)">Add years</button>
+            <button v-on:dblclick="sub(10)">substract years</button><br><br>
+
+            
+        </div>
+        <script src="Exevent.js"></script>
+    </body>
+</html>

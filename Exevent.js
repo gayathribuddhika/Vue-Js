@@ -3,6 +3,7 @@ new Vue({
     data:{
         age: 25
         
+        
     },
     methods:{
         add: function(inc){
@@ -10,10 +11,14 @@ new Vue({
         },
         sub: function(dec) {
             this.age-=dec;
+        },
+        click:function(){
+            alert ("You clicked me");
         }
-    
     }
     
     
+    
 });
+
 

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>vue js</title>
+        <link href = "style.css" rel="stylesheet" type="text/css" href="">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <h1>Keyboard events</h1>
+        <div id = "keyboard">
+            <label>Name : </label>
+            <input type="text" v-on:keyup = "logName">
+            <label>Age : </label>
+            <input type="text" v-on:keyup = "logAge"><br><br>
+
+            <label>Name : </label>
+            <input type="text" v-on:keyup.enter = "logName">
+            <label>Age : </label>
+            <input type="text" v-on:keyup.alt.enter = "logAge"><br><br>
+
+            <h1>Two way data binding</h1>
+            <label>Name : </label>
+            <input type="text" v-model = "name">
+            <span>{{ name }}</span><BR><br>
+            <label>Age : </label>
+            <input type="text" v-model = "age">
+            <span>{{ age }}</span>
+        </div>
+        <script src="keyEve.js"></script>
+    </body>
+</html>

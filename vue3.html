@@ -10,12 +10,16 @@
             <button v-on:click="add(1)">Add one to year</button>
             <button v-on:click="sub(1)">substract one from year</button><br><br>
 
+            <button v-on:click.once="add(20)">Add years once</button>
+            <button v-on:click.once="sub(12)">substract years once</button><br><br>
+
             <button v-on:click="add(2)">Add years</button>
             <button v-on:click="sub(5)">substract years</button><br><br>
 
             <button v-on:dblclick="add(10)">Add years</button>
             <button v-on:dblclick="sub(10)">substract years</button><br><br>
-            
+
+            <a v-on:click.prevent = "click" href="http://www.facebook.com">www.facebook.com</a>
         </div>
         <script src="Exevent.js"></script>
     </body>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>vue js</title>
+        <link href = "style.css" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <h1><u>Conditionals</u></h1>
+        <div id = "conditionals">
+            <h2>01.v-if statement</h2>
+            <button v-on:click = "error=!error">Error</button>
+            <button v-on:click = "success=!success">Success</button>
+            <p v-if = "error">This has an error</p>
+            <p v-if = "success">Well Done</p>
+
+            <h2>02.v-else-if statement</h2>
+            <button v-on:click = "error1=!error1">Error</button>
+            <button v-on:click = "success1=!success1">Success</button>
+            <p v-if = "error1">This has an error</p>
+            <p v-else-if = "success1">Well Done</p>
+
+            <h2>03.v-show statement</h2>
+            <button v-on:click = "error2=!error2">Error</button>
+            <button v-on:click = "success2=!success2">Success</button>
+            <p v-show = "error2">This has an error</p>
+            <p v-show = "success2">Well Done</p>
+        </div>
+        <script src="condition.js"></script>
+    </body>
+</html>

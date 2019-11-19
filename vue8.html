@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vue js</title>
+        <link href = "style.css" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+<body>
+    <h1><u>Looping with v-for</u></h1>
+    <div id = "forLoop">
+        <ul>
+            <li v-for = "name in names">{{name}}</li>
+        </ul>
+        <ul>
+            <li v-for = "detail in details">{{detail.name}} - {{detail.age}} - {{detail.Hometown}}</li>
+        </ul>
+        <template v-for = "(detail,index) in details">
+            <h3>{{index}}.{{detail.name}}</h3>
+            <p>{{detail.age}}</p>
+            <p>{{detail.Hometown}}</p>
+        </template>
+        <br><br>
+        <template v-for = "detail in details"><br>
+            <div v-for = "(key,val) in detail">
+                <p>{{val}} - {{key}}</p>
+            </div>
+        </template>
+    </div>
+    <script src="looping.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>vue js</title>
+        <link href = "style.css" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id = "dynamicCSS">
+
+            <h1>Dynamic CSS Classes</h1>
+            <h2>Example 01</h2>
+            <div v-on click = "available =! available"v-bind:class = "{available : available}"></div>
+            <span>Hello</span>
+            
+            <h2>Example 02</h2>
+            <div v-bind:class = "compClass"></div>
+            <button v-on:click = "nearby =! nearby">Toggle Nearby</button>
+            <button v-on:click = "available =! available">Toggle Available</button>
+            <span>Hello</span>
+        </div>
+        <script src="dynamic.js"></script>
+    </body>
+</html>

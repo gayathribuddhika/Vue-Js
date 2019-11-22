@@ -3,7 +3,7 @@ new Vue({
     data: { 
         name: 'Gayathri',
         job: "Student",
-        greeting = "Good Morning"
+        
     },
     methods:{
     	uni: function(country){
@@ -12,5 +12,12 @@ new Vue({
     },
     
     
-})
+});
+new Vue({
+    el: "#event",
+    data:{
+        age: 25
+    }
 
+    
+});
